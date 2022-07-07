@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="all-wrapper">
+        <div class="main-content">
+            <header class="header">Курсы основных валют
+            </header>
+            <div class="main">
+                <div class="main__header">Курсы валют
+                </div>
+                <div class="currency-card-wrapper">
+                    <div class="currency-card">
+                        <div class="currency-card__title">Курс Доллара </div>
+                        <div class="currency-card__abbreviated">USD</div>
+                        <div class="currency-card__value" data-value="USD">-- --</div>
+                    </div>
+                    <div class="currency-card">
+                        <div class="currency-card__title">Курс Евро</div>
+                        <div class="currency-card__abbreviated">EUR</div>
+                        <div class="currency-card__value" data-value="EUR">-- --</div>
+                    </div>
+                    <div class="currency-card">
+                        <div class="currency-card__title">Курс Казахстанских тенге </div>
+                        <div class="currency-card__abbreviated">KZT</div>
+                        <div class="currency-card__value" data-value="KZT">-- --</div>
+                    </div>
+                    <div class="currency-card">
+                        <div class="currency-card__title">Курс Армянских драмов</div>
+                        <div class="currency-card__abbreviated">AMD</div>
+                        <div class="currency-card__value" data-value="AMD">-- --</div>
+                    </div>
+                </div>
+                <div class="input-output-wrapper">
+                    <div class="currency-input">
+                        <div class="currency-input__title">Меняемая валюта</div>
+                        <select id="select-input" class="currency-input__select">
+                            <option value="RUB">RUB — Рубли</option>
+                            <option value="USD">USD — Доллар США</option>
+                            <option value="EUR" selected>EUR — Евро</option>
+                            <option value="KZT">KZT — Казахстанские тенге</option>
+                            <option value="AMD">AMD — Армянских драмов</option>
+                        </select>
+                        <input class="currency-input__field" type="number" id="input">
+
+                    </div>
+                    <div class="currency-output">
+                        <div class="currency-output__title">Получаемая валюта</div>
+                        <select id="select-output" class="currency-output__select">
+                            <option value="RUB" selected>RUB — Рубли</option>
+                            <option value="USD">USD — Доллар США</option>
+                            <option value="EUR">EUR — Евро</option>
+                            <option value="KZT">KZT — Казахстанские тенге</option>
+                            <option value="AMD">AMD — Армянских драмов</option>
+                        </select>
+                        <input class="currency-output__field" type="number" id="output">
+                    </div>
+                </div>
+            </div>
+            <footer>
+            </footer>
+        </div>
+    </div>
+    <script src="../Калькулятор валют/main.js"></script>
+</body>
+
+</html>
