@@ -3,23 +3,13 @@ const elementUSD = document.querySelector('[data-value="USD"]')
 const elementEUR = document.querySelector('[data-value="EUR"]')
 const elementKZT = document.querySelector('[data-value="KZT"]')
 const elementAMD = document.querySelector('[data-value="AMD"]')
-const rub = {
-    RUB: {
-        "ID": "R000001",
-        "NumCode": "999",
-        "CharCode": "RUB",
-        "Nominal": 1,
-        "Name": "Российский рубль",
-        "Value": 1,
-        "Previous": 1
-    }
-}
-getCurrencies()
+
+setTimeout(getCurrencies, 1000)
 const input = document.querySelector('#input')
 const output = document.querySelector('#output')
 const inputSelect = document.querySelector('#select-input')
 const outputSelect = document.querySelector('#select-output')
-async function getCurrencies(dataCurrencies) {
+async function getCurrencies() {
     let response = await fetch('https://www.cbr-xml-daily.ru/daily_json.js')
     const json = await response.json()
     const result = await json
